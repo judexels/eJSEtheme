@@ -1,0 +1,50 @@
+/**
+ * @file plugins/themes/newTheme/styles/index.less
+ *
+ * Copyright (c) 2023 PKP
+ * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
+ *
+ * @brief Stylesheet for New Theme
+ */
+
+// Import Bootstrap
+@import "lib/ui-library/styles/variables.less";
+@import "lib/ui-library/styles/bootstrap.less";
+
+// Basic body styling
+body {
+  font-family: @font-family-base;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @text-color;
+  background-color: @body-bg;
+}
+
+// Header styling
+.pkp_structure_head {
+  background-color: #f0f0f0; // Light grey background
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+
+  .pkp_site_name {
+    a {
+      color: #333; // Dark grey site name
+      font-size: 2em;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+}
+
+// Main content area
+.pkp_structure_main {
+  padding: 20px;
+}
+
+// Footer styling
+.pkp_structure_footer {
+  background-color: #333; // Dark grey background
+  color: #fff; // White text
+  padding: 20px;
+  text-align: center;
+}
